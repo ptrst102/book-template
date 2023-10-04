@@ -1,0 +1,115 @@
+@import url(packages/@vivliostyle/theme-base/theme-all.css);
+@import url(packages/@vivliostyle/theme-base/css/lib/prism/base.css);
+@import url(packages/@vivliostyle/theme-base/css/lib/prism/theme-okaidia.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap");
+
+:root {
+  --vs-theme--figure-img-max-height: 8cm;
+  --vs-theme--figure-img-max-width: 10cm;
+}
+
+:root {
+  --vs-columns: 2;
+  --vs-column-gap: 2rem;
+  --vs-color-body: #333;
+
+  --vs-font-family: "Noto Sans JP";
+  --vs-font-size: 16px;
+  --vs-line-height: 1.7;
+  --vs-font-weight: 400;
+  --vs-font-weight-bold: 700;
+
+  --vs--heading-font-family: "Noto Serif JP";
+  --vs--heading-margin-block: 0;
+  --vs--h1-font-size: 2em;
+  --vs--h1-margin-block: 0.8rem 0.4rem;
+  --vs--h1-text-align: center;
+  --vs--h2-font-size: 1.4em;
+  --vs--h2-margin-block: 0.8rem 0.4rem;
+  --vs--h3-font-size: 1.2em;
+  --vs--h3-margin-block: 0.4rem 0.2rem;
+  --vs--h4-font-size: 1em;
+  --vs--h4-margin-block: 0.4rem 0.2rem;
+  --vs--h5-font-size: 1em;
+  --vs--h6-font-size: 1em;
+  --vs--p-margin-block: 0;
+
+  --vs--p-text-indent: 1em;
+
+  --vs-section--marker-display: inline;
+  --vs-section--h1-marker-display: none;
+  --vs-section--h2-marker-content: counter(vs-counter-sec-h2) ".";
+  --vs-section--h3-marker-content: counter(vs-counter-sec-h2) "."
+    counter(vs-counter-sec-h3) ".";
+  --vs-section--h4-marker-content: counter(vs-counter-sec-h2) "."
+    counter(vs-counter-sec-h3) "." counter(vs-counter-sec-h4) ".";
+  --vs-section--h5-marker-content: counter(vs-counter-sec-h2) "."
+    counter(vs-counter-sec-h3) "." counter(vs-counter-sec-h4) "."
+    counter(vs-counter-sec-h5) ".";
+  --vs-section--h6-marker-content: counter(vs-counter-sec-h2) "."
+    counter(vs-counter-sec-h3) "." counter(vs-counter-sec-h4) "."
+    counter(vs-counter-sec-h5) "." counter(vs-counter-sec-h6) ".";
+
+  --vs-spacing-rlh: 0.5rem;
+  --vs-spacing-inline-indent: 1rem;
+  --vs--ul-minimum-inline-indent-size: 1rem;
+  --vs--ol-minimum-inline-indent-size: 1rem;
+  --vs--figure-item-padding-inline: 2rem;
+
+  --vs--blockquote-font-size: 90%;
+}
+
+@page {
+  background-image: url("assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+figure img {
+  max-height: var(--vs-theme--figure-img-max-height);
+  max-width: var(--vs-theme--figure-img-max-width);
+}
+
+h1 {
+  border: #333 1px solid;
+}
+
+h2 {
+  background: linear-gradient(transparent 60%, #ddd 100%);
+  padding-inline: 0.5em;
+}
+
+strong {
+  font-family: var(--vs-font-family);
+}
+
+.article {
+  border: #333 1px solid;
+  margin-block: 0.5rem;
+  padding: 0.5rem;
+}
+
+.article-head {
+  font-weight: var(--vs-font-weight-bold);
+}
+
+.san {
+  font-weight: var(--vs-font-weight-bold);
+  color: red;
+}
+
+.trailer {
+  float: block-start;
+  float-reference: page;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  float: block-end;
+  float-reference: page;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: #333 1px solid;
+}

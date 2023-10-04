@@ -1,0 +1,15 @@
+rules:
+  incremental-headers: true
+  max-ten:
+    max: 3
+  no-doubled-conjunctive-particle-ga: true
+  no-dropping-the-ra: true
+  preset-jtf-style:
+    "4.3.7.山かっこ<>": false
+  # prh:
+  #   rulePaths:
+  #     - "./node_modules/prh/prh-rules/languages/ja/typo.yml"
+  #     - "./node_modules/prh/prh-rules/media/techbooster.yml"
+  #     - "./node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml"
+filters:
+  comments: true
